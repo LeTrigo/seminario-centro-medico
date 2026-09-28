@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="centromedico.controller.LoginController"
+      alignment="CENTER"
+      spacing="15"
+      prefWidth="420"
+      prefHeight="500">
+
+    <padding>
+        <Insets top="40" right="50" bottom="40" left="50"/>
+    </padding>
+
+    <Label text="Centro Médico Pediátrico"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <Label text="Sistema de gestión"/>
+
+    <TextField fx:id="txtUsuario"
+               promptText="Usuario"/>
+
+    <PasswordField fx:id="txtPassword"
+                   promptText="Contraseña"/>
+
+    <Button text="Iniciar sesión"
+            onAction="#iniciarSesion"
+            maxWidth="Infinity"/>
+
+    <Label fx:id="lblMensaje"/>
+
+</VBox>

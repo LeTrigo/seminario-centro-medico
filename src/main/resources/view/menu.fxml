@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="centromedico.controller.MenuController"
+      alignment="CENTER"
+      spacing="15"
+      prefWidth="500"
+      prefHeight="520">
+
+    <padding>
+        <Insets top="40" right="60" bottom="40" left="60"/>
+    </padding>
+
+    <Label text="Centro Médico Pediátrico"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <Label fx:id="lblUsuario"
+           style="-fx-font-size: 14px;"/>
+
+    <Separator/>
+
+    <!-- Funciones administrativas -->
+
+    <Button fx:id="btnPacientes"
+            text="Gestionar pacientes"
+            onAction="#mostrarPrototipo"
+            maxWidth="Infinity"/>
+
+    <Button fx:id="btnTurnos"
+            text="Gestionar turnos"
+            onAction="#mostrarPrototipo"
+            maxWidth="Infinity"/>
+
+    <Button fx:id="btnAgenda"
+            text="Consultar agenda"
+            onAction="#mostrarPrototipo"
+            maxWidth="Infinity"/>
+
+    <!-- Funciones clínicas -->
+
+    <Button fx:id="btnHistoriaClinica"
+            text="Consultar historia clínica"
+            onAction="#mostrarPrototipo"
+            maxWidth="Infinity"/>
+
+    <Button fx:id="btnRegistrarConsulta"
+            text="Registrar consulta"
+            onAction="#mostrarPrototipo"
+            maxWidth="Infinity"/>
+
+    <Separator/>
+
+    <Button text="Cerrar sesión"
+            onAction="#cerrarSesion"
+            maxWidth="Infinity"/>
+
+</VBox>
